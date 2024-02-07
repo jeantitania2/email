@@ -28,6 +28,14 @@ label_imagen= Label(ventana, image= render)
 label_imagen.image=render
 label_imagen.grid(row=1,column=0,columnspan=2)
 
+#Imagen GMAIL
+imagen_gmail=Image.open("c:/Users/User/Pictures/logo.png")
+nueva_imagen=imagen_gmail.resize((125,84))
+render=ImageTk.PhotoImage(nueva_imagen)
+label_imagen= Label(ventana, image= render)
+label_imagen.image=render
+label_imagen.grid(row=1,column=1,columnspan=2)
+
 #Variables
 destinatario=StringVar(ventana)
 asunto=StringVar(ventana)
